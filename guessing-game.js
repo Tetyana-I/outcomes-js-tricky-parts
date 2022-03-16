@@ -23,7 +23,7 @@ function guessingGame() {
                 if (num === randomNumber) {
                     if (win !== true) {
                         win = true;
-                        return `You win! You found ${randomNumber} in ${guessesCount} guesses`;
+                        return `You win! You found ${randomNumber} in ${guessesCount} guesses.`;
                     } 
                     else return "The game is over, you already won!";
                 } 
