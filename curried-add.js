@@ -11,7 +11,13 @@
 
 
 function curriedAdd(total) {
-
+    if (total === undefined) return 0;
+    return  function nextArg(arg) {
+        if (arg === undefined) return total; 
+        total += arg;
+        return nextArg;
+    };
 }
 
 module.exports = { curriedAdd };
+
